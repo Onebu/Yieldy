@@ -1,0 +1,109 @@
+/* Gradient background */
+@-webkit-keyframes "Gradient" {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@-moz-keyframes "Gradient" {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes "Gradient" {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.App {
+	text-align: center;
+}
+.App-main {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+}
+.tagline {
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+	font-weight: 100;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
+.intro {
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 2.75em;
+	font-weight: 600;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+.log {
+	font-size: 15px;
+}
+.gradient {
+	width: 100wh;
+	height: 100vh;
+	color: #fff;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+	.App-main {
+		color: #fff;
+	}
+	.icons-social {
+		a {
+			color: #fff;
+			svg {
+				path {
+					fill: #fff;
+				}
+			}
+		}
+	}
+}
+.iconLog {
+	height: 30;
+}
+@media screen and (max-width: 600px) {
+	.App-main {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: calc(10px);
+	}
+	.tagline {
+		font-size: 1rem;
+		margin: 1rem 0;
+		font-weight: 100;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+	}
+	.log {
+		font-size: 10px;
+	}
+	.iconLog {
+		height: 15;
+	}
+}
